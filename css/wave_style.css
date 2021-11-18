@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(55, 161, 202);
+  overflow: hidden;
+}
+
+footer .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(/img/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave.wave1 {
+  animation: animate 30s linear infinite;
+  animation-delay: 0s;
+  bottom: 0;
+  z-index: 10;
+  opacity: 1;
+}
+
+footer .wave.wave2 {
+  animation: animate2 15s linear infinite;
+  animation-delay: -5s;
+  bottom: 10px;
+  z-index: 9;
+  opacity: 0.5;
+}
+
+footer .wave.wave3 {
+  animation: animate3 30s linear infinite;
+  animation-delay: -2s;
+  bottom: 15;
+  z-index: 8;
+  opacity: 0.2;
+}
+
+footer .wave.wave4 {
+  animation: animate4 5s linear infinite;
+  animation-delay: -5s;
+  bottom: 20px;
+  z-index: 7;
+  opacity: 0.7;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
